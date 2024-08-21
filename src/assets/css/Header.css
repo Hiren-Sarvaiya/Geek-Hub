@@ -1,0 +1,53 @@
+header {
+  padding: 1rem;
+}
+
+.logo {
+  font-size: 3rem;
+  letter-spacing: 0.05rem;
+  text-align: center;
+}
+
+nav {
+  padding: 0.5rem;
+  border-bottom: 2px solid white;
+}
+
+.container1 {
+  font-size: 1.25rem;
+}
+
+.navLinksContainer {
+  gap: 1rem;
+}
+
+.nav-links {
+  transition: all 100ms ease-in-out;
+  all: unset;
+}
+
+.nav-links:hover {
+  border-bottom: 2px solid white;
+  padding-bottom: 2px;
+}
+
+.nav-links:active {
+  border-style: none;
+  padding-bottom: 0;
+}
+
+.searchContainer {
+  padding: 0.5rem;
+  transition: all 100ms ease-in-out;
+  border-bottom: 2px solid transparent;
+}
+
+.searchContainer:focus-within {
+  border-color: white;
+}
+
+.searchContainer input {
+  outline: none;
+  background-color: transparent;
+  all: unset;
+}

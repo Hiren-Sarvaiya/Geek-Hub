@@ -1,0 +1,50 @@
+footer {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  background-color: #383FEF;
+}
+
+.socialLinksContainer {
+  gap: 1rem;
+  padding: 1rem;
+  border-bottom: 2px solid white;
+  width: 100%;
+}
+
+.footer-links {
+  all: unset;
+  height: 2rem;
+  width: 2rem;
+  background-color: black;
+  padding: 0.5rem;
+  border-radius: 999px;
+  transition: all 100ms ease-in-out;
+}
+
+.footer-links:hover {
+  background-color: white;
+}
+
+.fb:hover {
+  color: #1f7bf2;
+}
+
+.twitter:hover {
+  color: #08a5f3;
+}
+
+.ig:hover {
+  color: #d73685;
+}
+
+.linkedin:hover {
+  color: #087bb9;
+}
+
+.copyrightSection {
+  width: 100%;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
