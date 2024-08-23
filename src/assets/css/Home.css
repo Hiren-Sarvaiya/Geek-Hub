@@ -33,7 +33,7 @@ main > h1 {
 }
 
 .blogCard .title {
-  height: 3rem;
+  min-height: 3rem;
   font-size: 1.125rem;
   text-align: justify;
   margin-bottom: 0.5rem;

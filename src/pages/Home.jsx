@@ -31,10 +31,10 @@ const Home = () => {
       <div style={{gridTemplateRows: `repeat(${gridRows}, 455px)`}} className="blogsContainer">
         {blogsData.map(blog => {
           return (
-            <div className="blogCard">
+            <div key={blog.id} className="blogCard">
               <img src={blog.image} />
               <div className="title">{blog.title}</div>
-              <div className="desc">{blog.content}{blog.content}</div>
+              <div className="desc">{blog.content}</div>
               <div className="cardFooter flex justify-between">
                 <div className="date">{getFullDate(blog.creationDate)}</div>
                 <div className="author">{blog.author}</div>

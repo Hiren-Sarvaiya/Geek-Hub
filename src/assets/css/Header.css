@@ -47,7 +47,6 @@ nav {
 }
 
 .searchContainer input {
-  outline: none;
   background-color: transparent;
   all: unset;
 }
