@@ -1,8 +1,8 @@
 footer {
   padding-left: 1rem;
   padding-right: 1rem;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
+  padding-top: .5rem;
+  padding-bottom: .5rem;
   background-color: #383FEF;
 }
 
@@ -18,7 +18,7 @@ footer {
   height: 2rem;
   width: 2rem;
   background-color: black;
-  padding: 0.5rem;
+  padding: .5rem;
   border-radius: 999px;
   transition: all 100ms ease-in-out;
 }

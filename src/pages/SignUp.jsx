@@ -1,9 +1,10 @@
 import React from "react"
+import "../assets/css/SignUp.css"
 
 const SignUp = () => {
   return (
-    <div>
-      Sign Up
+    <div className="container1">
+      
     </div>
   )
 }
