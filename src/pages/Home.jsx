@@ -3,17 +3,12 @@ import "../assets/css/Home.css"
 
 const Home = () => {
   const [blogsData, setBlogsData] = useState([])
-  const [gridRows, setGridRows] = useState(null)
 
   useEffect(() => {
     fetch("https://66c47ea4b026f3cc6cef9574.mockapi.io/api/v1/blogsData")
       .then(res => { return res.json() })
       .then(data => { setBlogsData(data) })
   }, [])
-
-  useEffect(() => {
-    setGridRows(Math.ceil(blogsData.length / 3))
-  }, [blogsData])
 
   const getFullDate = (dateString) => {
     const dateObj = new Date(dateString)
@@ -28,7 +23,7 @@ const Home = () => {
   return (
     <main>
       <h1>Blogs</h1>
-      <div style={{gridTemplateRows: `repeat(${gridRows}, 455px)`}} className="blogsContainer">
+      <div className="blogsContainer">
         {blogsData.map(blog => {
           return (
             <div key={blog.id} className="blogCard">

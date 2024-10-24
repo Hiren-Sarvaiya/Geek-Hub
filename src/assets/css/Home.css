@@ -9,9 +9,6 @@ main > h1 {
 .blogsContainer {
   padding-top: 1rem;
   padding-bottom: 1rem;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1rem;
 }
 
 .blogCard {
@@ -47,7 +44,7 @@ main > h1 {
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
-  -webkit-line-clamp: 5;
+  /* -webkit-line-clamp: 5; */
   -webkit-box-orient: vertical;
 }
 
