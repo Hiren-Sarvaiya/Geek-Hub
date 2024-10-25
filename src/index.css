@@ -40,3 +40,49 @@ body {
 .cur-p {
   cursor: pointer;
 }
+
+label {
+  user-select: none;
+}
+
+.passImg {
+  position: absolute;
+  height: 2rem;
+  width: 2rem;
+  top: 1rem;
+  right: 1rem;
+  background-color: transparent;
+}
+
+.submit-btns {
+  border: none;
+  color: white;
+  font-family: Oswald, sans-serif;
+  background-color: #383FEF;
+  padding: .5rem 1rem;
+  transition: 250ms;
+  font-size: 1.5rem;
+}
+
+.submit-btns:hover {
+  background-color: #5c61ff;
+  border-radius: .5rem;
+}
+
+.submit-btns:active {
+  background-color: #383FEF;
+}
+
+.links {
+  text-decoration: none;
+  color: #383FEF;
+  transition: 250ms;
+}
+
+.links:hover {
+  color: #5c61ff;
+}
+
+.links:active {
+  color: #383FEF;
+}

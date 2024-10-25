@@ -1,4 +1,110 @@
-.container1 {
-  padding: 1rem;
+.signupContainer {
+  padding: 4rem 0;
+  font-size: 1.5rem;
 }
 
+.signupContainer form {
+  background-color: #020223;
+  outline: 2px solid red;
+  width: 500px;
+  z-index: 10;
+  border-radius: .75rem;
+  gap: 1rem;
+  padding: 1rem 1.5rem;
+  box-shadow: 0 2px 2px #ffffff1a, 0 2px 16px #ffffff1a;
+}
+
+.fnameContainer,
+.lnameContainer,
+.passwordContainer4,
+.passwordContainer6 {
+  width: 48%;
+}
+
+.signupContainer form input:not([type=submit]) {
+  width: 100%;
+  font-size: 1.5rem;
+  background-color: transparent;
+  padding: 1.75rem .5rem .5rem .5rem;
+  border: 2px solid white;
+  border-radius: .5rem;
+  color: white;
+  transition: 250ms;
+}
+
+.passwordContainer5,
+.passwordContainer7 {
+  border: 2px solid white;
+  border-radius: .5rem;
+}
+
+#pass1,
+#pass2,
+#pass1:focus,
+#pass2:focus {
+  border: none;
+  outline: none;
+  width: 80%;
+}
+
+.outlineGreen:focus,
+.passwordContainer5:focus-within,
+.passwordContainer7:focus-within {
+  outline: none;
+  border: 2px solid #00ff00 !important;
+}
+
+.fnameContainer,
+.lnameContainer,
+.passwordContainer4,
+.passwordContainer6,
+.usernameContainer2,
+.emailContainer,
+.mobNoContainer {
+  position: relative;
+}
+
+.fnameContainer label,
+.lnameContainer label,
+.passwordContainer4 label,
+.passwordContainer6 label,
+.usernameContainer2 label,
+.emailContainer label,
+.mobNoContainer label {
+  position: absolute;
+  top: 48%;
+  transform: translateY(-50%);
+  left: .5rem;
+  pointer-events: none;
+  transition: 250ms;
+}
+
+.fnameContainer:focus-within label,
+.lnameContainer:focus-within label,
+.passwordContainer4:focus-within label,
+.passwordContainer6:focus-within label,
+.usernameContainer2:focus-within label,
+.emailContainer:focus-within label,
+.mobNoContainer:focus-within label,
+.inputActive {
+  top: 1rem !important;
+  font-size: 1rem;
+}
+
+.usernameContainer2,
+.emailContainer,
+.mobNoContainer {
+  width: 100%;
+}
+
+/* Chrome, Safari, Edge */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}

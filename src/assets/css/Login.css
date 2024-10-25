@@ -82,51 +82,10 @@
   padding-top: 1.25rem;
 }
 
-.passwordContainer .img {
-  position: absolute;
-  height: 2.5rem;
-  width: 2.5rem;
-  top: 7px;
-  right: 6px;
-  padding-top: 10px;
-  padding-right: 10px;
-  background-color: transparent;
-}
-
 .passwordContainer input {
   width: 85%;
   background-color: transparent;
   border: none;
   outline: none;
   color: white;
-}
-
-.submit-btn {
-  all: unset;
-  background-color: #383FEF;
-  padding: .5rem 1rem;
-  transition: 250ms;
-}
-
-.submit-btn:hover {
-  background-color: #5c61ff;
-  border-radius: .5rem;
-}
-
-.submit-btn:active {
-  background-color: #383FEF;
-}
-
-.link {
-  all: unset;
-  color: #383FEF;
-  transition: 250ms;
-}
-
-.link:hover {
-  color: #5c61ff;
-}
-
-.link:active {
-  color: #383FEF;
 }

@@ -11,7 +11,7 @@ const Login = () => {
 
   const togglShowPassword = () => {
     setShowPassword(!showPassword)
-    if (showPassword) {
+    if (!showPassword) {
       passwordInput.current.type = "text"
     } else {
       passwordInput.current.type = "password"
@@ -34,12 +34,12 @@ const Login = () => {
               <input type="password" id="password" value={password} onChange={(e) => setPassword(e.target.value)} ref={passwordInput} />
             </div>
             {showPassword ?
-              <PiEye className="img cur-p" onClick={togglShowPassword} /> :
-              <PiEyeSlash className="img cur-p" onClick={togglShowPassword} />
+              <PiEye className="passImg cur-p" onClick={togglShowPassword} /> :
+              <PiEyeSlash className="passImg cur-p" onClick={togglShowPassword} />
             }
           </div>
-          <input className="submit-btn cur-p" type="submit" value="Log In" />
-          <div>Don't have an account? <NavLink className="link cur-p" to="/signup">Sign Up</NavLink></div>
+          <input className="submit-btns cur-p" type="submit" value="Log In" />
+          <div>Don't have an account? <NavLink className="links cur-p" to="/signup">Sign Up</NavLink></div>
         </form>
       </div>
     </section>
