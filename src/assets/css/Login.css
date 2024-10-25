@@ -6,7 +6,7 @@
 .formContainer {
   position: relative;
   height: 400px;
-  width: 300px;
+  width: 400px;
   border-radius: .75rem;
   box-shadow: 0 2px 2px #ffffff1a, 0 2px 16px #ffffff1a;
 }
@@ -24,63 +24,109 @@
 
 .loginContainer form {
   position: absolute;
-  background-color: #020213;
+  background-color: #020223;
   height: 100%;
   width: 100%;
   z-index: 10;
   border-radius: .75rem;
   gap: 1rem;
   padding: 1rem 1.5rem;
-  outline: 1px solid red;
 }
 
 .loginContainer form input {
   font-size: 1.5rem;
 }
 
-.inputContainers {
+.usernameContainer,
+.passwordContainer {
   position: relative;
 }
 
-.inputContainers label {
+.usernameContainer label,
+.passwordContainer label {
   position: absolute;
-  top: 50%;
+  top: 48%;
   transform: translateY(-50%);
   left: .5rem;
   pointer-events: none;
   transition: 250ms;
 }
 
-.inputContainers input {
+.usernameContainer input,
+.passwordContainer {
   border-radius: .5rem;
-  padding: 1.5rem .5rem .5rem .5rem;
+  padding: 1.75rem .5rem .5rem .5rem;
   background-color: transparent;
   border: 2px solid white;
   color: white;
   transition: 250ms;
 }
 
-.inputContainers input:focus {
+.usernameContainer input:focus,
+.passwordContainer:focus-within {
   outline: none;
   border: 2px solid #00ff00;
 }
 
-.inputContainers:focus-within label {
-  top: .75rem;
+.usernameContainer:focus-within label,
+.usernameContainer .usernameActive,
+.passwordContainer:focus-within label,
+.passwordContainer .passwordActive {
+  top: 1rem;
   font-size: 1rem;
 }
 
 .passwordContainer {
   position: relative;
+  cursor: text;
+  padding-top: 1.25rem;
 }
 
 .passwordContainer .img {
   position: absolute;
-  height: 2rem;
-  width: 2rem;
-  top: 6px;
+  height: 2.5rem;
+  width: 2.5rem;
+  top: 7px;
   right: 6px;
   padding-top: 10px;
   padding-right: 10px;
-  background-color: #020213;
+  background-color: transparent;
+}
+
+.passwordContainer input {
+  width: 85%;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: white;
+}
+
+.submit-btn {
+  all: unset;
+  background-color: #383FEF;
+  padding: .5rem 1rem;
+  transition: 250ms;
+}
+
+.submit-btn:hover {
+  background-color: #5c61ff;
+  border-radius: .5rem;
+}
+
+.submit-btn:active {
+  background-color: #383FEF;
+}
+
+.link {
+  all: unset;
+  color: #383FEF;
+  transition: 250ms;
+}
+
+.link:hover {
+  color: #5c61ff;
+}
+
+.link:active {
+  color: #383FEF;
 }

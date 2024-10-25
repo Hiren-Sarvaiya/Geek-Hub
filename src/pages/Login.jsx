@@ -1,28 +1,45 @@
-import React from "react"
+import React, { useState, useRef } from "react"
 import "../assets/css/Login.css"
 import { PiEye, PiEyeSlash } from "react-icons/pi"
 import { NavLink } from "react-router-dom"
 
 const Login = () => {
+  const [username, setUsername] = useState("")
+  const [password, setPassword] = useState("")
+  const [showPassword, setShowPassword] = useState(false)
+  const passwordInput = useRef()
+
+  const togglShowPassword = () => {
+    setShowPassword(!showPassword)
+    if (showPassword) {
+      passwordInput.current.type = "text"
+    } else {
+      passwordInput.current.type = "password"
+    }
+  }
+
   return (
     <section className="loginContainer flex justify-center">
       <div className="formContainer">
         <div className="bg"></div>
         <form className="flex justify-center items-center flex-col">
           <h1>Hello, Again... &#128075;</h1>
-          <div className="usernameContainer inputContainers">
-            <label htmlFor="username">Username</label>
-            <input type="text" id="username" />
+          <div className="usernameContainer">
+            <label htmlFor="username" className={username ? "usernameActive" : ""}>Username</label>
+            <input type="text" id="username" value={username} onChange={(e) => setUsername(e.target.value)} />
           </div>
-          <div className="passwordContainer">
-            <div className="passwordContainer2 inputContainers">
-              <label htmlFor="password">Password</label>
-              <input type="text" id="password" />
+          <div className="passwordContainer" onClick={() => passwordInput.current.focus()}>
+            <div className="passwordContainer2">
+              <label htmlFor="password" className={password ? "passwordActive" : ""}>Password</label>
+              <input type="password" id="password" value={password} onChange={(e) => setPassword(e.target.value)} ref={passwordInput} />
             </div>
-            <PiEyeSlash className="img cur-p" />
+            {showPassword ?
+              <PiEye className="img cur-p" onClick={togglShowPassword} /> :
+              <PiEyeSlash className="img cur-p" onClick={togglShowPassword} />
+            }
           </div>
-          <input type="submit" value="Log In" />
-          <p>Don't have an account? <NavLink to="/signup">Sign Up</NavLink></p>
+          <input className="submit-btn cur-p" type="submit" value="Log In" />
+          <div>Don't have an account? <NavLink className="link cur-p" to="/signup">Sign Up</NavLink></div>
         </form>
       </div>
     </section>

@@ -3,9 +3,9 @@ import "../assets/css/SignUp.css"
 
 const SignUp = () => {
   return (
-    <div className="container1">
+    <section className="signupContainer flex justify-center">
       
-    </div>
+    </section>
   )
 }
 

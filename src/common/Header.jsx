@@ -5,7 +5,7 @@ import "../assets/css/Header.css"
 const Header = () => {
   return (
     <nav className="flex">
-      <div className="logo">Geek Hub</div>
+      <NavLink className="logo-link cur-p" to="/"><div className="logo">Geek Hub</div></NavLink>
       <div className="navContainer flex justify-center items-center">
         <div className="searchContainer flex">
           <input type="text" id="search" placeholder="Start exploring..." />

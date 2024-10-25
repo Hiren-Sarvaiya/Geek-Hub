@@ -21,6 +21,11 @@ nav {
   letter-spacing: .05rem;
 }
 
+.logo-link {
+  color: white;
+  text-decoration: none;
+}
+
 .navContainer {
   height: fit-content;
   gap: 1.5rem;
@@ -49,6 +54,7 @@ nav {
   padding: .5rem;
   transition: all 100ms ease-in-out;
   border-bottom: 0;
+  border-bottom: 2px solid transparent;
 }
 
 .searchContainer:focus-within {
