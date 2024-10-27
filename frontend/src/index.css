@@ -47,10 +47,10 @@ label {
 
 .passImg {
   position: absolute;
-  height: 2rem;
-  width: 2rem;
-  top: 1rem;
-  right: 1rem;
+  height: 1.75rem;
+  width: 1.75rem;
+  top: .9rem;
+  right: .9rem;
   background-color: transparent;
 }
 
@@ -61,7 +61,7 @@ label {
   background-color: #383FEF;
   padding: .5rem 1rem;
   transition: 250ms;
-  font-size: 1.5rem;
+  font-size: 1rem;
 }
 
 .submit-btns:hover {
@@ -71,6 +71,18 @@ label {
 
 .submit-btns:active {
   background-color: #383FEF;
+}
+
+.submit-btns:disabled {
+  cursor: not-allowed;
+}
+
+.submit-btns:disabled:hover {
+  background-color: gray;
+}
+
+.formFooter {
+  font-size: 1.25rem;
 }
 
 .links {

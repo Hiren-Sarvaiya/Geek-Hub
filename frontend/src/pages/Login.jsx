@@ -39,7 +39,7 @@ const Login = () => {
             }
           </div>
           <input className="submit-btns cur-p" type="submit" value="Log In" />
-          <div>Don't have an account? <NavLink className="links cur-p" to="/signup">Sign Up</NavLink></div>
+          <div className="formFooter">Don't have an account? <NavLink className="links cur-p" to="/signup">Sign Up</NavLink></div>
         </form>
       </div>
     </section>

@@ -1,12 +1,16 @@
 .loginContainer {
   padding: 4rem 0;
-  font-size: 1.5rem;
+  font-size: 1rem;
+}
+
+.loginContainer h1 {
+  font-size: 2rem;
 }
 
 .formContainer {
   position: relative;
-  height: 400px;
-  width: 400px;
+  height: 350px;
+  width: 350px;
   border-radius: .75rem;
   box-shadow: 0 2px 2px #ffffff1a, 0 2px 16px #ffffff1a;
 }
@@ -23,7 +27,7 @@
 }
 
 .loginContainer form {
-  position: absolute;
+  position: relative;
   background-color: #020223;
   height: 100%;
   width: 100%;
@@ -34,12 +38,13 @@
 }
 
 .loginContainer form input {
-  font-size: 1.5rem;
+  font-size: 1rem;
 }
 
 .usernameContainer,
 .passwordContainer {
   position: relative;
+  width: 100%;
 }
 
 .usernameContainer label,
@@ -60,6 +65,7 @@
   border: 2px solid white;
   color: white;
   transition: 250ms;
+  width: 100%;
 }
 
 .usernameContainer input:focus,
@@ -73,13 +79,13 @@
 .passwordContainer:focus-within label,
 .passwordContainer .passwordActive {
   top: 1rem;
-  font-size: 1rem;
+  font-size: .85rem;
 }
 
 .passwordContainer {
   position: relative;
   cursor: text;
-  padding-top: 1.25rem;
+  padding-top: 1.5rem;
 }
 
 .passwordContainer input {

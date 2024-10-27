@@ -1,11 +1,30 @@
 .signupContainer {
   padding: 4rem 0;
-  font-size: 1.5rem;
+  font-size: 1rem;
+}
+
+.signupContainer h1 {
+  font-size: 2rem;
+}
+
+.signupFormContainer {
+  position: relative;
+}
+
+.signupBg {
+  position: absolute;
+  background-color: #383FEF;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  transform: rotate(-12deg);
+  border-radius: .75rem;
+  box-shadow: 0 2px 2px #ffffff1a, 0 2px 16px #ffffff1a;
 }
 
 .signupContainer form {
+  position: relative;
   background-color: #020223;
-  outline: 2px solid red;
   width: 500px;
   z-index: 10;
   border-radius: .75rem;
@@ -21,9 +40,14 @@
   width: 48%;
 }
 
+.nameContainer,
+.passwordContainer3 {
+  width: 100%;
+}
+
 .signupContainer form input:not([type=submit]) {
   width: 100%;
-  font-size: 1.5rem;
+  font-size: 1rem;
   background-color: transparent;
   padding: 1.75rem .5rem .5rem .5rem;
   border: 2px solid white;
@@ -88,7 +112,7 @@
 .mobNoContainer:focus-within label,
 .inputActive {
   top: 1rem !important;
-  font-size: 1rem;
+  font-size: .85rem;
 }
 
 .usernameContainer2,
